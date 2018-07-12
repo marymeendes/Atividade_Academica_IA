@@ -1,0 +1,20 @@
+
+X_val_train, X_val, Y_val_train, Y_val = model_selection.train_test_split(X_train, Y_train, test_size=0.1)
+
+W = [0.1, 0.2]
+G = [1, 2]
+
+For w in W
+    For g in G
+            model = Train(X_val_train, Y_val_train, w, g)
+            pred = predict(X_val)
+            value = accu(Y_val, pred)
+
+	value eh o melhor?
+    end
+end
+
+I = 0
+J = 1
+model = Train(X_train, Y_train, W[i], G[j])
+pred = predict(X_test)
